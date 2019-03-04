@@ -1,3 +1,5 @@
 class LandmarksController < ApplicationController
-  # add controller methods
+  get '/landmarks/new' do 
+    binding.pry
+  end 
 end
