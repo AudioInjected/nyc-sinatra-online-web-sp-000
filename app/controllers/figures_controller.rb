@@ -27,10 +27,10 @@ class FiguresController < ApplicationController
   end 
   
   patch '/figures/:id' do 
-    binding.pry
     @figure = Figure.find(params[:id])
     @figure.name = params[:figure][:name]
     @figure.landmarks << Landmark.create(name: params[:landmark][:name])
+    
     redirect '/figures'
   end 
 end
