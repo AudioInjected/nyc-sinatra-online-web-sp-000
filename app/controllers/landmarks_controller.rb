@@ -8,4 +8,10 @@ class LandmarksController < ApplicationController
     
     redirect '/landmarks'
   end 
+  
+  get '/landmarks' do 
+    @landmarks = Landmark.all 
+    
+    erb '/landmarks/index'
+  end 
 end
