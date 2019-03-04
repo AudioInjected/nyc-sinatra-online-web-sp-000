@@ -27,7 +27,7 @@ class LandmarksController < ApplicationController
     erb :'/landmarks/edit'
   end 
   
-  patch '/landmarks' do 
+  patch '/landmarks/:id' do 
     binding.pry
     
   end 
