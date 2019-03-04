@@ -20,4 +20,6 @@ class LandmarksController < ApplicationController
     
     erb :'/landmarks/show'
   end 
+  
+  
 end
