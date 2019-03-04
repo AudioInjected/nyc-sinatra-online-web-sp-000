@@ -29,5 +29,6 @@ class LandmarksController < ApplicationController
   
   patch '/landmarks' do 
     binding.pry
+    
   end 
 end
