@@ -7,6 +7,7 @@ class FiguresController < ApplicationController
     @figure = Figure.create(params[:figure])
     @figure.titles << Title.create(name: params[:title][:name]) 
     @figure.landmarks << Landmark.create(name: params[:landmark][:name])
+    binding.pry
     @figure.save
     
     redirect '/figures'
