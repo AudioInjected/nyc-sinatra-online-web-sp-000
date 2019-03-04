@@ -5,5 +5,6 @@ class LandmarksController < ApplicationController
   
   post '/landmarks' do 
     binding.pry
+    @landmark = Landmark.create()
   end 
 end
