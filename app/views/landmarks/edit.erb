@@ -2,7 +2,7 @@
 <h3><%=@landmark.name%></h3>
 <h3><%=@landmark.year_completed%></h3>
 
-<form action="/landmarks" method="POST">
+<form action="/landmarks/<%=@landmark.id%>" method="POST">
   <input type="hidden" id="hidden" name="_method" value="PATCH">
   
   <label>Name:</label>
