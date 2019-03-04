@@ -28,7 +28,8 @@ class FiguresController < ApplicationController
   
   patch '/figures/:id' do 
     binding.pry
-    Figure.find(params[:id])
+    @figure = Figure.find(params[:id])
+    @figure.name = params[:figure][:name]
     redirect '/figures'
   end 
 end
