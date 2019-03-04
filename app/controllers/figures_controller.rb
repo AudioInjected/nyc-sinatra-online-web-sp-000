@@ -31,6 +31,6 @@ class FiguresController < ApplicationController
     @figure.name = params[:figure][:name]
     @figure.landmarks << Landmark.create(name: params[:landmark][:name])
     
-    redirect '/figures
+    redirect "/figures/#{@figure.id}"
   end 
 end
